@@ -1,0 +1,19 @@
+[project]
+name = "fire-and-ice-adofai"
+version = "0.1.0"
+description = "Audio-to-ADOFAI chart generation pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "librosa>=0.10",
+  "soundfile>=0.12",
+  "pydantic>=2.0",
+  "typer>=0.12",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
